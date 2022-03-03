@@ -1,0 +1,977 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Brilliant Restaurant</title>
+	<link rel="icon" href="images/restaurantlogo2.png">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script type="text/javascript" src="count.js"></script>
+	<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="fontawesome/css/all.min.css">
+	<link rel="stylesheet" type="text/css" href="slick-master/slick/slick.css">
+	<link rel="stylesheet" type="text/css" href="slick-master/slick/slick-theme.css">
+	<!-- <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Emilys+Candy&family=Poiret+One&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@1,600&display=swap" rel="stylesheet"> -->
+
+	<link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@1,600&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Bungee+Outline&family=Tangerine:wght@700&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Emilys+Candy&family=Poiret+One&display=swap" rel="stylesheet">
+
+
+	
+</head>
+<body class="bd">
+
+	
+	<nav class="navbar navbar-expand-lg m-0 py-2 menu" id="scroll">
+		<div class="container-fluid">
+			
+			<p class=" fnav py-2 "><b><i class="fas fa-utensils" ></i>BRILLIANT RESTAURANT</b></p>
+			<button class="navbar-toggler button p-0" data-toggle="collapse" data-target="#mainMenu">
+				<i class="fas fa-sliders-h button"></i>			
+			</button>
+
+			<div class="collapse navbar-collapse" id="mainMenu">
+				<ul class="navbar-nav ml-auto">
+					<li class="nav-item colo mx-2 px-3"><a href="index.html" class="nav-link">HOME</a></li>
+					<li class="nav-item colo mx-2">
+						<div class="dropdown">
+							<a class="btn dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+								MENU
+							</a>
+
+							<div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+								<a class="dropdown-item text-dark" href="appetizer.html">Appetizer</a>
+								<a class="dropdown-item text-dark" href="drink.html">Drink</a>
+								<a class="dropdown-item text-dark" href="dessert.html">Dessert</a>
+								<a class="dropdown-item text-dark" href="rice.html">Rice</a>
+								<a class="dropdown-item text-dark" href="cuisine.html">Cuisine</a>
+								<a class="dropdown-item text-dark" href="wine.html">Beer & Wine</a>
+
+							</div>
+						</div>
+
+					</li>
+					<li class="nav-item colo mx-2 px-2"><a href="about1.html" class="nav-link px-2">ABOUT</a></li>
+					<li class="nav-item colo mx-2 px-3"><a href="contact.html" class="nav-link">CONTACT</a></li>
+					<div class="view-detail" data-target="#checkModal" data-toggle="modal">
+					<li class="nav-item colo mx-2 px-4"><a href="#checkModal" class="nav-link" title="Check out"><i class="fas fa-shopping-cart"></i><span id="item_count"></span></a></li>
+				</div>
+				</ul>
+			</div>
+
+		</div>
+	</nav>
+
+
+
+
+ 
+
+
+	<div class="jumbotron jumbotron-fluid jumApp">
+		<div class="container text-center ">
+			<!-- <h3>Drink Menu</h3>
+				<p>Menu > Drink</p> -->
+
+				<div class="slick_slider slider">
+					<div class="text-center">
+						<a href="" class="text-success wrapper text-decoration-none">
+
+							<img src="images/appetizers/1.jpeg" class="imgslick">
+						</a>
+					</div>
+
+
+					<div class="text-center">
+						<a href="" class="text-success wrapper text-decoration-none">
+							<img src="images/appetizers/1.jpg" class="imgslick">
+
+						</a>
+					</div>
+
+					<div class="text-center">
+						<a href="" class="text-success wrapper text-decoration-none ">
+							<img src="images/appetizers/2.jpg" class="imgslick">
+
+						</a>
+					</div>
+
+					<div class="text-center">
+						<a href="" class="text-success wrapper text-decoration-none" >
+							<img src="images/appetizers/3.jpg"  class="imgslick">
+
+						</a>
+					</div>
+
+					<div class="text-center">
+						<a href="" class="text-success wrapper text-decoration-none" >
+							<img src="images/appetizers/app1.jpg"  class="imgslick">
+
+						</a>
+					</div>
+
+					<div class="text-center">
+						<a href="" class="text-success wrapper text-decoration-none">
+							<img src="images/appetizers/app2.jpg" class="imgslick">
+
+						</a>
+					</div>
+
+
+				</div>
+
+			</div>
+
+	</div>
+
+
+
+	
+<!-- Appetizer id 1-10 -->
+	<div class="container mt-4 ">
+		<h1 class="text-center pt-5 title">Appetizer</h1>
+		<hr class="item-divider my-3">
+		<div class="row mt-5">
+
+			<div class="col-lg-4 col-md-6 col-sm-12 my-3">
+				<div class="card cad">
+
+					<div class="row no-gutters">
+						<div class="col-md-8 col-sm-8">
+							<div class="card-body">
+								<h5 class="card-title">Fired Wonton</h5>
+								<p>Menu Price : 3500MMK</p>
+								
+								<div class="view-detail" data-target="#detailModal" data-toggle="modal">
+									<button class="btn btn-outline-secondary add" data-id="1" data-name="Fired Wonton" data-price="3500" data-img="images/appetizers/app1.jpg" data-cata="Vegatable">Add to Cart</button>
+								</div>
+							 	
+							</div>
+						</div>
+						<div class="col-md-4 col-sm-4">
+							<div class="card-img">
+								<img src="images/appetizers/app1.jpg" class="card-img  img">
+							</div>
+							
+						</div>
+					</div>
+				</div>
+				
+			</div>
+
+
+			<div class="col-lg-4 col-md-6 col-sm-12 my-3">
+				<div class="card">
+					<div class="row no-gutters">
+						<div class="col-md-8 col-sm-8">
+							<div class="card-body">
+								<h5 class="card-title ">Shrimp with Potato Rolls</h5>
+								<p>Menu Price : 5500MMK</p>
+								<div class="view-detail" data-target="#detailModal" data-toggle="modal">
+									<button class="btn btn-outline-secondary add" data-id="2" data-name="Shrimp with Potato Rolls " data-price="5500" data-img="images/appetizers/app2.jpg" data-cata="Fruit">Add to Cart</button>
+								</div>
+								
+							</div>
+						</div>
+						<div class="col-md-4 col-sm-4">
+							<div class="card-img">
+							<img src="images/appetizers/app2.jpg" class="card-img  img">
+							</div>
+						</div>
+					</div>
+				</div>
+				
+			</div>
+
+
+			<div class="col-lg-4 col-md-6 col-sm-12 my-3">
+				<div class="card">
+					<div class="row no-gutters">
+						<div class="col-md-8 col-sm-8">
+							<div class="card-body">
+								<h5 class="card-title ">Fried Fish  Potato Rolls </h5>
+								<p>Menu Price : 4500MMK</p>
+								<div class="view-detail" data-target="#detailModal" data-toggle="modal">
+									<button class="btn btn-outline-secondary add" data-id="3" data-name="Fried Fish Potato Rolls " data-price="4500" data-img="images/appetizers/app3.jpg" data-cata="chicken,red chili powder,coconut milk">Add to Cart</button>
+								</div>
+								
+							</div>
+						</div>
+						<div class="col-md-4 col-sm-4">
+							<div class="card-img">
+							<img src="images/appetizers/app3.jpg" class="card-img  img">
+						</div>
+						</div>
+					</div>
+				</div>
+				
+			</div>
+
+			<div class="col-lg-4 col-md-6 col-sm-12 my-3">
+				<div class="card">
+					<div class="row no-gutters">
+						<div class="col-md-8 col-sm-8">
+							<div class="card-body">
+								<h5 class="card-title ">Deep Fried Chicken Wings</h5>
+								<p>Menu Price : 5000MMK</p>
+								<div class="view-detail" data-target="#detailModal" data-toggle="modal">
+									<button class="btn btn-outline-secondary add" data-id="4" data-name="Deep Fried Chicken Wings " data-price="5000" data-img="images/appetizers/app4.jpeg" data-cata="Fruit">Add to Card</button>
+								</div>
+								
+							</div>
+						</div>
+						<div class="col-md-4 col-sm-4">
+							<div class="card-img">
+							<img src="images/appetizers/app4.jpeg" class="card-img  img">
+						</div>
+						</div>
+					</div>
+				</div>
+				
+			</div>
+
+
+			<div class="col-lg-4 col-md-6 col-sm-12 my-3">
+				<div class="card">
+
+					<div class="row no-gutters">
+						<div class="col-md-8 col-sm-8">
+							<div class="card-body">
+								<h5 class="card-title">Shrimp Cheese Bread Roll</h5>
+								<p >Menu Price:3500MMK</p>
+								<div class="view-detail" data-target="#detailModal" data-toggle="modal">
+									<button class="btn btn-outline-secondary add" data-id="5" data-name="Shrimp Cheese Bread Roll" data-price="3500" data-img="images/appetizers/appp1.jpg" data-cata="Vegatable">Add to Cart</button>
+								</div>
+							 	
+							</div>
+						</div>
+						<div class="col-md-4 col-sm-4">
+							<div class="card-img">
+							<img src="images/appetizers/appp1.jpg" class="card-img  img">
+						</div>
+						</div>
+					</div>
+				</div>
+				
+			</div>
+
+			<div class="col-lg-4 col-md-6 col-sm-12 my-3">
+				<div class="card">
+
+					<div class="row no-gutters">
+						<div class="col-md-8 col-sm-8">
+							<div class="card-body">
+								<h5 class="card-title ">Fired Wonton</h5>
+								<p>Menu Price : 3500MMK</p>
+								
+								<div class="view-detail" data-target="#detailModal" data-toggle="modal">
+									<button class="btn btn-outline-secondary add" data-id="6" data-name="Fired Wonton(Chicken or Pork)" data-price="3500" data-img="images/appetizers/app1.jpg" data-cata="Vegatable">Add to Cart</button>
+								</div>
+							 	
+							</div>
+						</div>
+						<div class="col-md-4 col-sm-4">
+							<div class="card-img">
+							<img src="images/appetizers/app1.jpg" class="card-img  img">
+						</div>
+						</div>
+					</div>
+				</div>
+				
+			</div>
+
+			<div class="col-lg-4 col-md-6 col-sm-12 my-3">
+				<div class="card">
+
+					<div class="row no-gutters">
+						<div class="col-md-8 col-sm-8">
+							<div class="card-body">
+								<h5 class="card-title">French Fries</h5>
+								<p>Menu Price : 3000MMK</p>
+								
+								<div class="view-detail" data-target="#detailModal" data-toggle="modal">
+									<button class="btn btn-outline-secondary add" data-id="7" data-name="French Fries" data-price="3000" data-img="images/appetizers/1.jpeg" data-cata="Vegatable">Add to Cart</button>
+								</div>
+
+							</div>
+						</div>
+						<div class="col-md-4 col-sm-4">
+							<div class="card-img">
+							<img src="images/appetizers/1.jpeg" class="card-img  img">
+						</div>
+						</div>
+					</div>
+				</div>
+				
+			</div>
+
+
+			<div class="col-lg-4 col-md-6 col-sm-12 my-3">
+				<div class="card">
+
+					<div class="row no-gutters">
+						<div class="col-md-8 col-sm-8">
+							<div class="card-body">
+								<h5 class="card-title ">Seafood Tempura</h5>
+								<p>Menu Price : 8000MMK</p>
+								
+								<div class="view-detail" data-target="#detailModal" data-toggle="modal">
+									<button class="btn btn-outline-secondary add" data-id="8" data-name="Seafood Tempura" data-price="8000" data-img="images/appetizers/1.jpeg" data-cata="Vegatable">Add to Cart</button>
+								</div>
+								
+							</div>
+						</div>
+						<div class="col-md-4 col-sm-4">
+							<div class="card-img">
+							<img src="images/appetizers/1.jpg" class="card-img  img">
+						</div>
+						</div>
+					</div>
+				</div>
+				
+			</div>
+
+			<div class="col-lg-4 col-md-6 col-sm-12 my-3">
+				<div class="card">
+
+					<div class="row no-gutters">
+						<div class="col-md-8 col-sm-8">
+							<div class="card-body">
+								<h5 class="card-title ">Chicken Satay</h5>
+								<p>Menu Price : 4000MMK</p>
+								
+								<div class="view-detail" data-target="#detailModal" data-toggle="modal">
+									<button class="btn btn-outline-secondary add" data-id="9" data-name="Chicken Satay" data-price="4000" data-img="images/appetizers/3.jpg" data-cata="Vegatable">Add to Cart</button>
+								</div>
+								
+							</div>
+						</div>
+						<div class="col-md-4 col-sm-4">
+							<div class="card-img">
+							<img src="images/appetizers/3.jpg" class="card-img  img">
+						</div>
+						</div>
+					</div>
+				</div>
+				
+			</div>
+
+
+			<div class="col-lg-4 col-md-6 col-sm-12 my-3">
+				<div class="card">
+
+					<div class="row no-gutters">
+						<div class="col-md-8 col-sm-8">
+							<div class="card-body">
+								<h5 class="card-title ">Deep fried Soft Shell Crab</h5>
+								<p>Menu Price : 6500MMK</p>
+								
+								<div class="view-detail" data-target="#detailModal" data-toggle="modal">
+									<button class="btn btn-outline-secondary add" data-id="10" data-name="Thawt Puu Deep fried Soft Shell Crab " data-price="6500" data-img="images/appetizers/4.jpeg" data-cata="Vegatable">Add to Cart</button>
+								</div>
+								
+							</div>
+						</div>
+						<div class="col-md-4 col-sm-4">
+							<div class="card-img">
+							<img src="images/appetizers/4.jpeg" class="card-img  img">
+						</div>						
+					</div>
+					</div>
+				</div>
+				
+			</div>
+
+
+			<div class="col-lg-4 col-md-6 col-sm-12 my-3">
+				<div class="card">
+
+					<div class="row no-gutters">
+						<div class="col-md-8 col-sm-8">
+							<div class="card-body">
+								<h5 class="card-title ">Mohingar</h5>
+								<p>Menu Price : 2000MMK</p>
+								
+								<div class="view-detail" data-target="#detailModal" data-toggle="modal">
+									<button class="btn btn-outline-secondary add" data-id="70" data-name="Mohingar" data-price="2000" data-img="images/appetizers/4.jpeg" data-cata="Vegatable">Add to Cart</button>
+								</div>
+								
+							</div>
+						</div>
+						<div class="col-md-4 col-sm-4">
+							<div class="card-img">
+								<img src="images/appetizers/m1.jpg" class="card-img  img">
+							</div>						
+						</div>
+					</div>
+				</div>
+				
+			</div>
+
+
+
+				<div class="col-lg-4 col-md-6 col-sm-12 my-3">
+				<div class="card">
+
+					<div class="row no-gutters">
+						<div class="col-md-8 col-sm-8">
+							<div class="card-body">
+								<h5 class="card-title ">Noodle Milk</h5>
+								<p>Menu Price : 2000MMK</p>
+								
+								<div class="view-detail" data-target="#detailModal" data-toggle="modal">
+									<button class="btn btn-outline-secondary add" data-id="71" data-name="Noodle Milk" data-price="2000" data-img="images/noddleMilk.jpg" data-cata="Vegatable">Add to Cart</button>
+								</div>
+								
+							</div>
+						</div>
+						<div class="col-md-4 col-sm-4">
+							<div class="card-img">
+								<img src="images/noddleMilk.jpg" class="card-img  img">
+							</div>						
+						</div>
+					</div>
+				</div>
+				
+			</div>
+
+
+
+		</div>
+	</div>
+
+
+
+	<hr class="w-100 divider">
+	<!-- our service -->
+	<div class="content mt-3">
+		<div class="container py-4">
+			<div class="row">
+				<div class="col-md-4 px-5">
+					<h4>ORDER TO</h4>
+					<div class="row">
+						<div class="col-md-2">
+							<span class="fa-stack fa-2x form1">
+								<i class="fas fa-mobile-alt form1"></i>
+							</span>
+						</div>
+						<div class="col-md-10">
+							<p class="text-light">Mobile<br>
+							09458034466</p>
+						</div>
+						<div class="col-md-2">
+							<span class="fa-stack fa-2x">
+								<i class="far fa-envelope form1"></i>
+							</span>
+						</div>
+						<div class="col-md-10">
+							<p class="text-light ">Email<br>
+							brilliantrestaurant@gmail.com</p>
+						</div>
+
+					</div>
+
+
+				</div>
+				<div class="col-md-4 px-5">
+					<h4>QUICK LINK</h4>
+					<a class="btn btn-outline-light p-1" href="appetizer.html" role="button">Appetizer ></a>
+					<a class="btn btn-outline-light p-1" href="drink.html" role="button">Drink ></a>
+					<a class="btn btn-outline-light p-1" href="dessert.html" role="button">Dessert ></a>
+					<a class="btn btn-outline-light p-1" href="rice.html" role="button">Rice ></a>
+					<a class="btn btn-outline-light p-1" href="cuisine.html" role="button">Cuisine ></a>
+					<a class="btn btn-outline-light p-1" href="wine.html" role="button">Beer & Wine ></a>
+				</div>
+				<div class="col-md-4 col-sm-12 px-5">
+
+					<!-- div class="row"> -->
+						<!-- 
+						<div class="col-md-8  text-center text-muted">
+						
+							<div class="row"> -->
+								<h4>FOLLOW- US</h4>
+								<!-- <div class="col-md-4 col-sm-12"> -->
+									<a href="https://www.facebook.com/" title="facebook"><i class="fab fa-facebook text-light fa-2x social p-2"></i></a>
+
+								<!-- </div>
+									<div class="col-md-4 col-sm-12 "> -->
+										<a href="https://www.messenger.com/" title="messager"><i class="fab fa-facebook-messenger text-light fa-2x social p-2"></i>
+										</a>
+								<!-- </div>
+									<div class="col-md-4 col-sm-12 "> -->
+										<a href="https://www.instagram.com/" title="instagram">	<i class="fab fa-instagram-square text-light fa-2x social p-2"></i></a>
+
+								<!-- </div>
+								
+								
+								</div> -->
+
+					<!-- 	</div>
+
+					</div> -->
+
+
+
+				</div>
+
+			</div>
+
+		</div>
+	</div>
+
+		<!-- footer -->
+	 
+
+		<footer class="footer py-1">
+			<div class="container text-light text-center text-dark text-monospace">
+				<p class="footertext m-0">Copyright &copy; All Right Result | Powered By Web-Design-2020 </p>
+				
+			</div>
+
+			
+		</footer>
+
+
+
+
+
+
+	
+
+<!-- Modal Add to Cart -->
+	<div class="modal fade" id="detailModal">
+		<div class="modal-dialog modal-lg">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h3>Item Details</h3>
+					<button class="close" data-dismiss="modal">
+						<span>&times;</span>
+					</button>
+				</div>
+
+				<div class="modal-body">
+					<div class="container">
+						<div class="row">
+							<div class="col-md-6">
+								<img src="" class="img-fluid showPic">
+							</div>
+							<div class="col-md-6">
+								<form>
+									<input type="hidden" id="id" name="">
+									<div class="form-group">
+										<label for="">Name:</label>
+										<input type="text" readonly="true" name="" id="name" class="form-control name">
+									</div>
+
+
+									<div class="form-group">
+										<label for="">Price:</label>
+										<input type="number" readonly="true" name="" id="price" class="form-control price">
+									</div>
+
+									<!-- <div class="form-group">
+										<label for="cata">Category:</label>
+										<input type="text" name="" id="cata" class="form-control cata">
+									</div> -->
+
+									<!-- <div class="form-group">
+										<select class="form-control" id="choose">
+											<option>Chicken</option>
+											<option>Pork</option>
+											<option>Food</option>
+										</select>
+									</div> -->
+								
+								<!-- <button class="btn btn-outline-success" id="addTo">Add to Cart</button> -->
+								</form>
+
+								<button class="min">-<button id="qty">1<button class="max">+</button>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="modal-footer">
+					<!-- <button class="min">-<button id="qty"><button class="max">+</button> -->
+					<button class="btn btn-outline-secondary" id="addTo" data-dismiss="modal">Add to Cart</button>
+				</div>
+
+
+			</div>
+		</div>
+		
+	</div>
+
+
+
+<!-- CheckOut Modal -->
+<div class="modal fade" id="checkModal">
+	<div class="modal-dialog modal-dialog-scrollable modal-lg">
+		<div class="modal-content">
+			<div class="modal-header">
+				<h3>Menu Check Out</h3>
+				<button class="close" data-dismiss="modal">
+					<span>&times;</span>
+				</button>
+			</div>
+
+			<div class="modal-body">
+				<div class="container">
+					<div class="table-responsive">
+						<table class="table">
+							<thead>
+								<tr>
+									<th>No.</th>
+									<th>Menu Name:</th>
+									<th>Menu Price:</th>
+									<th>Qty</th>
+									<th>Sub Total</th>
+								</tr>
+							</thead>
+
+							<tbody id="tbody">
+
+
+							</tbody>
+
+							<!-- <tfoot>
+								<tr>
+									<th>No.</th>
+									<th>Menu Name:</th>
+									<th>Menu Price:</th>
+									<th>Qty</th>
+									<th>Sub Total</th>
+								</tr>
+							</tfoot> -->
+						</table>
+					</div>
+
+				</div>
+			</div>
+
+			<div class="modal-footer">
+				<button id="order" class="btn btn-outline-secondary">Order Now</button>
+			</div>
+
+
+		</div>
+	</div>
+
+</div>
+
+
+
+	<script type="text/javascript" src="bootstrap/js/jquery.min.js"></script>
+	<script type="text/javascript" src="bootstrap/js/bootstrap.bundle.min.js"></script>
+	<script type="text/javascript" src="slick-master/slick/slick.js"></script>
+	
+
+
+	<script type="text/javascript">
+		
+
+		$(document).ready(function()
+			{
+				var name;
+				var num=1;
+				getData();
+
+				$(".qty").html(num);
+				
+				$(".add").click(function()
+				{
+					var item_id = $(this).data('id');
+					var item_name = $(this).data('name');
+					var item_img = $(this).data('img');
+					var item_price = $(this).data('price');
+					var item_cata = $(this).data('cata');
+
+					$('.showPic').attr('src',item_img);
+					
+
+					$(".name").val(item_name);
+					$(".price").val(item_price);
+					$(".cata").val(item_cata);
+					$("#id").val(item_id);
+
+					name=$(".name").val(item_name);
+
+					console.log(item_id,item_img);
+					console.log(name);
+				})
+
+
+				$('.max').click(function()
+				{
+					num++;
+					
+					$("#qty").text(num);
+
+				})
+
+
+				$('.min').click(function()
+				{
+					num--;
+					if (num>0) 
+					{
+						$("#qty").text(num);
+					}
+					else
+					{
+						$("#qty").text(0);
+					}
+					
+
+				})
+
+
+
+				
+				$('#addTo').click(function()
+				{
+					var menu_id = $("#detailModal #id").val().trim();
+					var menu_name =$("#detailModal #name").val().trim();
+					var menu_price =$("#detailModal #price").val().trim();
+					// var menu_choose =$("#detailModal #choose").val().trim();
+					var menu_qty =$("#detailModal #qty").text();
+
+					console.log(menu_id,menu_name,menu_price,menu_qty);
+
+					var menu_item={
+						id: menu_id,
+						name: menu_name,
+						price: menu_price,
+						qty: menu_qty
+					}
+
+					var menuString = localStorage.getItem("rt_shop");
+					var menuArray;
+					if(menuString==null)
+					{
+						 menuArray = Array();
+					}
+					else
+					{
+						menuArray = JSON.parse(menuString);
+
+					}
+
+					var status = false;
+
+					$.each(menuArray,function(i,v)
+					{
+						if(menu_id == v.id)
+						{
+							status = true;
+							v.qty = parseInt(v.qty) + parseInt(menu_qty);
+						}
+
+					})
+
+					if(status == false)
+					{
+						menuArray.push(menu_item);
+
+					}
+					
+					var menuData = JSON.stringify(menuArray);
+					localStorage.setItem("rt_shop",menuData);
+					
+					getData();
+					
+				})
+
+
+				
+				function getData()
+				{
+					var menuString = localStorage.getItem("rt_shop");
+					console.log(menuString);
+
+
+					if (menuString) {
+						var menuArray = JSON.parse(menuString);
+						var html = '';
+						var no=1;
+						var total=0;
+
+
+						$.each(menuArray,function(i,v)
+						{
+							var name = v.name;
+							var price = v.price;
+							var qty = v.qty;
+
+
+							html +=`
+							<tr>
+							<td>${no++}</td>
+							<td>${name}</td>
+							<td>${price}</td>
+							<td><button class="min" data-item_i="${i}">-<button> ${qty} <button class="max" data-item_i="${i}">+</button></td>
+							<td>${price*qty}</td>
+							</tr>`
+
+
+							total += price * qty;
+						})
+
+						html += `
+						<tr>
+						<td colspan="4">Total</td>
+						<td>${total}</td>
+						</tr>
+						`	
+
+						$("#tbody").html(html);	
+
+					}
+
+					else
+					{
+						html = '';
+						$("#tbody").html(html);
+					}
+					count();
+				}
+
+				$("#tbody").on('click', '.max' , function()
+				{
+					var item_i = $(this).data('item_i');
+					var menuString = localStorage.getItem("rt_shop");
+					if(menuString)
+					{
+						var menuArray = JSON.parse(menuString);
+						$.each(menuArray,function(i,v)
+						{
+							if(item_i == i)
+							{
+								v.qty++;
+							}
+
+							var menuData = JSON.stringify(menuArray);
+							localStorage.setItem("rt_shop",menuData);
+							getData();
+						})
+					}
+				})
+
+
+				$("#tbody").on('click', '.min' , function()
+				{
+					var item_i = $(this).data('item_i');
+					var menuString = localStorage.getItem("rt_shop");
+					if(menuString)
+					{
+						var menuArray = JSON.parse(menuString);
+						$.each(menuArray, function(i,v)
+						{
+							if(item_i == i)
+							{
+								v.qty--;
+								if(v.qty == 0)
+								{
+									menuArray.splice(item_i,1);
+								}
+							}
+
+							var menuData = JSON.stringify(menuArray);
+							localStorage.setItem("rt_shop",menuData);
+							getData();
+
+						})
+					}
+				})
+
+
+
+
+				$("#order").click(function()
+				{
+					var ans = confirm("Are you sure order");
+					if(ans)
+					{	
+						var conAns = confirm("Thank You, Can take Order Menu Items between 30minutes");
+						if(conAns)
+						{
+							localStorage.clear();
+							getData();
+						}
+						
+					}
+				})
+
+
+
+
+
+			$('.slick_slider').slick({
+				dots: false,
+				autoplay:true,
+				autoplaySpeed:1500,
+
+
+				slidesToShow: 4,
+				slidesToScroll: 1,
+				touchMove: false,
+				responsive: [
+				{
+					breakpoint: 1024,
+					settings: {
+						slidesToShow: 3,
+						slidesToScroll: 3,
+						infinite: true,
+						dots: true
+					}
+				},
+				{
+					breakpoint: 600,
+					settings: {
+						slidesToShow: 2,
+						slidesToScroll: 2
+					}
+				},
+				{
+					breakpoint: 480,
+					settings: {
+						slidesToShow: 1,
+						slidesToScroll: 1
+					}
+				}
+				]
+			});
+
+
+
+
+
+			})
+	</script>
+
+
+
+	<script >
+
+		var prescroll= window.pageYOffset;
+		window.onscroll = function() {
+
+			var currentScroll = window.pageYOffset;
+			if (prescroll>currentScroll) {
+				document.getElementById("scroll").style.top = "0";
+			} else {
+				document.getElementById("scroll").style.top = "-100px";
+			}
+			prescroll= currentScroll;
+
+		}
+	</script>
+	
+
+</body>
+</html>

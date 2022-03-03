@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="fontawesome/css/all.min.css">
+	
+</head>
+<body>
+
+
+	
+
+	<nav class="navbar navbar-expand-md navbar-light menu py-3">
+		<div class="container">
+			<a href="index.html" class="navbar-brand text-success">MORNING MARKET</a>
+			<button class="navbar-toggler" data-toggle="collapse" data-target="#mainMenu">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+
+			<div class="collapse navbar-collapse" id="mainMenu">
+				<ul class="navbar-nav ml-auto">
+					<li class="nav-item hov"><a href="index.html" class="nav-link ">Home</a></li>
+					<li class="nav-item hov"><a href="products.html" class="nav-link">Products</a></li>
+					<li class="nav-item hov"><a href="about.html" class="nav-link">About</a></li>
+					<li class="nav-item hov"><a href="contact.html" class="nav-link">Contact</a></li>
+					<div class="view-detail" data-target="#checkModal" data-toggle="modal">
+					<li class="nav-item hov"><a href="#checkModal" class="nav-link">CheckOut</a></li>
+					</div>
+				</ul>
+				
+			</div>
+		</div>
+	</nav>
+
+	<div class="view-detail" data-target="#checkModal" data-toggle="modal">
+	<button>Check Out</button>
+	</div>
+
+
+	<div class="modal fade" id="checkModal">
+		<div class="modal-dialog modal-dialog-scrollable modal-lg">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h3>Menu Check Out</h3>
+					<button class="close" data-dismiss="modal">
+						<span>&times;</span>
+					</button>
+				</div>
+
+				<div class="modal-body">
+					<div class="container">
+						<div class="table-responsive">
+							<table class="table table-success">
+								<thead class="thead-light">
+									<tr>
+										<th>No.</th>
+										<th>Menu Name:</th>
+										<th>Menu Price:</th>
+										<th>Qty</th>
+										<th>Sub Total</th>
+									</tr>
+								</thead>
+
+								<tbody id="tbody">
+
+									
+								</tbody>
+
+								<tfoot>
+									<tr>
+										<th>No.</th>
+										<th>Menu Name:</th>
+										<th>Menu Price:</th>
+										<th>Qty</th>
+										<th>Sub Total</th>
+									</tr>
+								</tfoot>
+							</table>
+						</div>
+						
+					</div>
+				</div>
+
+				<div class="modal-footer">
+					<button id="order">Order</button>
+				</div>
+
+
+			</div>
+		</div>
+		
+	</div>
+
+
+
+
+
+
+	<script type="text/javascript" src="bootstrap/js/jquery.min.js"></script>
+	<script type="text/javascript" src="bootstrap/js/bootstrap.bundle.min.js"></script>
+
+
+	<script type="text/javascript">
+		$(document).ready(function()
+		{
+			getData();
+			function getData()
+			{
+				var menuString = localStorage.getItem("rt_shop");
+				console.log(menuString);
+
+
+				if (menuString) {
+					var menuArray = JSON.parse(menuString);
+					var html = '';
+					var no=1;
+					var total=0;
+
+
+					$.each(menuArray,function(i,v)
+					{
+						var name = v.name;
+						var price = v.price;
+						var qty = v.qty;
+						
+
+						html +=`
+						<tr>
+						<td>${no++}</td>
+						<td>${name}</td>
+						<td>${price}</td>
+						<td><button class="min" data-item_i="${i}">-<button> ${qty} <button class="max" data-item_i="${i}">+</button></td>
+						<td>${price*qty}</td>
+						</tr>`
+
+
+						total += price * qty;
+					})
+
+					html += `
+					<tr>
+					<td colspan="4">Total</td>
+					<td>${total}</td>
+					</tr>
+					`	
+
+					$("#tbody").html(html);	
+
+				}
+
+				else
+					{
+						html = '';
+						$("#tbody").html(html);
+					}
+			}
+
+
+			$("#tbody").on('click', '.max' , function()
+			{
+				var item_i = $(this).data('item_i');
+				var menuString = localStorage.getItem("rt_shop");
+				if(menuString)
+				{
+					var menuArray = JSON.parse(menuString);
+					$.each(menuArray,function(i,v)
+					{
+						if(item_i == i)
+						{
+							v.qty++;
+						}
+
+						var menuData = JSON.stringify(menuArray);
+						localStorage.setItem("rt_shop",menuData);
+						getData();
+					})
+				}
+			})
+
+
+			$("#tbody").on('click', '.min' , function()
+			{
+				var item_i = $(this).data('item_i');
+				var menuString = localStorage.getItem("rt_shop");
+				if(menuString)
+				{
+					var menuArray = JSON.parse(menuString);
+					$.each(menuArray, function(i,v)
+					{
+						if(item_i == i)
+						{
+							v.qty--;
+							if(v.qty == 0)
+							{
+								menuArray.splice(item_i,1);
+							}
+						}
+
+						var menuData = JSON.stringify(menuArray);
+						localStorage.setItem("rt_shop",menuData);
+						getData();
+
+					})
+				}
+			})
+
+
+			$("#order").click(function()
+				{
+					var ans = confirm("Are you sure order");
+					if(ans)
+					{
+						localStorage.clear();
+						getData();
+					}
+				})
+
+
+
+
+		})
+
+
+
+
+
+
+	</script>
+
+
+
+
+
+
+</body>
+</html>

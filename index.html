@@ -1,0 +1,622 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Brilliant Restaurant</title>
+	<link rel="icon" href="images/restaurantlogo2.png">
+	
+	<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="stylesheet" type="text/css" href="style1.css">
+	<script type="text/javascript" src="count.js"></script>
+	<!-- <link rel="stylesheet" type="text/css" href="fontawesome/fontawesome/css/all.min.css"> -->
+
+	<link rel="stylesheet" type="text/css" href="fontawesome/css/all.min.css">
+	<link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@1,600&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Bungee+Outline&family=Tangerine:wght@700&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Emilys+Candy&family=Poiret+One&display=swap" rel="stylesheet">
+
+	
+	
+</head>
+<body>
+	
+	<nav class="navbar navbar-expand-lg m-0 py-2 menu" id="scroll">
+		<div class="container-fluid">
+			
+			<p class="navbar-brand py-2 font"><b><i class="fas fa-utensils"></i>BRILLIANT RESTAURANT</b></p>
+			<button class="navbar-toggler button p-0" data-toggle="collapse" data-target="#mainMenu">
+				<i class="fas fa-sliders-h button"></i>			
+			</button>
+
+			<div class="collapse navbar-collapse" id="mainMenu">
+				<ul class="navbar-nav ml-auto">
+					<li class="nav-item colo mx-2 px-3"><a href="" class="nav-link">HOME</a></li>
+					<li class="nav-item colo mx-2">
+						<div class="dropdown">
+							<a class="btn dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+								MENU
+							</a>
+
+							<div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+								<a class="dropdown-item text-dark" href="appetizer.html">Appetizer</a>
+								<a class="dropdown-item text-dark" href="drink.html">Drink</a>
+								<a class="dropdown-item text-dark" href="dessert.html">Dessert</a>
+								<a class="dropdown-item text-dark" href="rice.html">Rice</a>
+								<a class="dropdown-item text-dark" href="cuisine.html">Cuisine</a>
+								<a class="dropdown-item text-dark" href="wine.html">Beer & Wine</a>
+
+							</div>
+						</div>
+
+					</li>
+					<li class="nav-item colo mx-2 px-2"><a href="about1.html" class="nav-link px-2">ABOUT</a></li>
+					<li class="nav-item colo mx-2 px-3"><a href="contact.html" class="nav-link">CONTACT</a></li>
+					<div class="view-detail" data-target="#checkModal" data-toggle="modal">
+					<li class="nav-item colo mx-2 px-4"><a href="#checkModal" class="nav-link" title="Check out"><i class="fas fa-shopping-cart"></i><span id="item_count"></span></a></li>
+				</div>
+				</ul>
+			</div>
+
+		</div>
+	</nav>
+
+
+
+	<!-- parallx -->
+	<div class="parallx1 text-center  mt-1 py-5 ">
+		<h2 class="hello">W E L C O M E</h2>
+		<svg class="arrows">
+			<path class="a1" d="M0 0 L30 32 L60 0"></path>
+			<path class="a2" d="M0 20 L30 52 L60 20"></path>
+			<path class="a3" d="M0 40 L30 72 L60 40"></path>
+		</svg>
+		
+
+	</div>
+	<!-- note -->
+	<div class="container mt-5">
+		<h5 class="text-center p-0">RESTAURANT</h5>
+		<p class="text-center logo m-0 p-0"><b><i class="fas fa-utensils"></i>DELICIOUS RESTAURANT</b></p>
+		<hr class="logohr">
+		<p class="text-center logoglass m-0 p-0"><i class="fas fa-glass-cheers"></i></p>
+		<p class="text-center">A fine restaurant where you could have a taste of our wine resort. The walls are decorated with wine boxes,<br> murals of the grapes, and the ceiling is inspired by grape vine trellis. Enjoy the wines of Yamanashi and Nagano <br>prefectures, just like having the delicious food in a vineyard.<br><br>＜About providing dinner and breakfast buffet menu＞<br><br>
+			
+			Dinner and breakfast at the Delicious Restaurant.<br>
+			Change from set menu to buffet menu.<br>
+			* The content may change without notice on the day<br><br><span>* Hotel Containment action activated for COVID-19 prevention*</span></p>
+	</div>
+
+
+
+
+	<!-- banner header carosel -->
+	<div class="container mt-3">
+		<div class="carousel slide" id="headerCarousel" data-ride="carousel">
+			
+			<ol class="carousel-indicators">
+				<li data-target="#headerCarousel" data-slide-to="0" class="active">
+
+
+				</li>
+				<li data-target="#headerCarousel" data-slide-to="1" class="">
+
+				</li>
+				<li data-target="#headerCarousel" data-slide-to="2" class="">
+
+				</li>
+			</ol>
+			<div class="carousel-inner ">
+				<div class="carousel-item active">
+					<img src="images/view15.webp" class="img-fluid d-block w-100">
+					<div class="img-overlay caro">
+
+					</div>
+					
+				</div>
+
+				<div class="carousel-item">
+					<img src="images/view12.jpg" class="img-fluid d-block w-100 caro">
+					<div class="img-overlay">
+
+					</div>
+					
+				</div>
+				<div class="carousel-item">
+					<img src="images/view14.jpg" class="img-fluid d-block w-100 caro">
+					<div class="img-overlay">
+
+					</div>
+					
+				</div>
+
+			</div>
+			<a href="#headerCarousel" class="carousel-control-prev" role="button" data-slide="prev">
+ 		<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+ 		
+ 	</a>
+ 	<a href="#headerCarousel" class="carousel-control-next" role="button" data-slide="next">
+ 		<span class="carousel-control-next-icon" aria-hidden="true"></span>
+ 		
+ 	</a>
+		</div>
+	</div>
+	
+ <!-- breakfast -->
+ <p class="text-center logo mt-5 pt-5"><b><i class="fas fa-utensils"></i>BREAKFAST <i class="fas fa-utensils"></i></b></p>
+ <hr class="logohr">
+		<div class="container">
+		<div class="row breakfast">
+			<div class="col-md-5 my-5 py-5 px-5">
+				<div class="design p-5">
+				<span><b>Breakfast</b></span>
+				<h3>Plenty of seasonal vegetables. The day starts from a nutritious breakfast that wakes up your body.</h3>
+				<p>In the refreshing morning on the plateau, enjoy a meal good for your body. Dishes made by 20 kinds of vegetables line up on the dish. Please enjoy the original taste of the seasonal vegetables.</p>
+			</div>
+		</div>
+	
+			<!-- <div class="col-md-6 my-5 py-5">
+				<img src="images/breakfast.jpg" class="img-fluid ">
+			</div> -->
+		</div>
+
+			<hr class="w-100 divider my-5">
+				<p class="text-center logo mt-5 pt-5"><b><i class="fas fa-utensils"></i>LUNCH <i class="fas fa-utensils"></i></b></p>
+ 			<hr class="logohr">
+
+ 			<div class="row lunch">
+			<div class="col-md-6 my-5 py-5">
+				<!-- <img src="images/lunch.jpg" class="img-fluid"> -->
+			</div>
+			<div class="col-md-2"></div>
+			<div class="col-md-4 my-5 py-5">
+				<div class="design p-5">
+				<span><b>BURRER</b></span>
+				<h3>Lunch with rich flavors of spice and herbs.</h3><br>
+				<p>
+					We have a wide variety of dishes with rich flavors of spices and herbs on the buffet board and various kinds of sweets for you to have a refreshing lunch time <br>at the resort of plateau.</p>
+			</div>
+		</div>
+	</div>
+			<hr class="w-100 divider my-5">
+
+				<p class="text-center logo mt-5 pt-5"><b><i class="fas fa-utensils"></i>DINNER <i class="fas fa-utensils"></i></b></p>
+ 			<hr class="logohr">
+
+			<div class="row dinner">
+			<div class="col-md-6 my-5">
+				<div class="design p-5">
+				<span><b>DINNER</b></span>
+				<h3>Delicious restaurant is
+				for you to enjoy the dishes
+				cooked by our original ironware.</h3>
+				<p>Enjoy it with the chefs’ signature dishes as muchas you wish at the menu. <!-- Please come to taste the fascinating original taste of the fresh ingredients. --></p>
+			</div>
+		</div>
+			<!-- <div class="col-md-6 mt-5 pt-5">
+				<img src="images/dinner.jpg" class="img-fluid">
+			</div> -->
+			<!-- <div class="col-md-6 p-1 mt-4 mb-5">
+				<img src="images/dinner2.jpg" class="img-fluid">
+			</div>
+			<div class="col-md-6 p-1 mt-4 mb-5">
+				<img src="images/dinner3.jpg" class="img-fluid">
+			</div> -->
+		</div>
+		</div>
+	</div>
+	<hr class="w-100 divider my-5">
+
+<!-- table design -->
+       <p class="text-center logo mt-5"><i class="fas fa-utensils"></i> NEAT DECORATION<br><i class="fas fa-chair"></i></p>
+		<div class="tabledesign my-5">
+		<div class="container my-5">
+
+			<div class="row">
+				 <div class="col-md-6">
+				 	<p></p>
+				 </div>
+				<div class="col-md-1">
+				 	<p></p>
+				 </div>
+				  <div class="col-md-5 p-3">
+				 	<!-- <p class="design p-5">Design ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				 	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				 	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+				 	consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+				 	cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+				 	proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p> -->
+				 </div>
+
+			</div>
+		</div>
+	</div>
+
+
+
+
+	<hr class="w-100 divider my-5">
+
+	<div class="container oncontent my-5">
+		<div class="row">
+			<div class="col-md-6 my-3">
+				<h5>About using the restaurant with children</h5>
+				<span>We have a variety sizes of sheets and cutlery for your children with different age or size</span>
+				
+			</div>
+			<div class="col-md-6 my-3">
+				<h5>About using the restaurant accompanied with dog</h5>
+				<span>For breakfast ,lunch, dinner：Pets allowed in the restaurant only for guests (reservation required)<br>
+				For breakfast ,lunch：Pets allowed on the terrace seats (April-September only, no stormy weather, no reservations possible)</span>
+				
+			</div>
+			
+		</div>
+	</div>
+
+	<div class="container">
+		<div class="row my-3">
+			<div class="col-md-4">
+				<div class="card">
+					<div class="card-img">
+						<img src="images/wine1.jpg" class="img-fluid card-img-top">
+						
+					</div>
+					<div class="card-body text-center py-4">
+						<p class="text-muted">Enjoy wines 
+							 at the restaurant,
+							the Declaration of BYO Freedom.</p>
+						
+					</div>
+					
+				</div>
+				
+			</div>
+			<div class="col-md-4">
+				<div class="card">
+					<div class="card-img">
+						<img src="images/cake.jpg" class="img-fluid card-img-top">
+						
+					</div>
+					<div class="card-body text-center">
+						
+						<p class="text-muted">Anniversary Service
+						(cakes, flowers, etc.)</p>
+						
+					</div>
+					
+				</div>
+				
+			</div>
+			<div class="col-md-4">
+				<div class="card">
+					<div class="card-img">
+						<img src="images/child.jpg" class="img-fluid card-img-top">
+						
+					</div>
+					<div class="card-body text-center">
+						<p class="text-muted">Enjoy the restaurants with your children</p>
+						
+					</div>
+					
+				</div>
+				
+			</div>
+			
+			
+		</div>
+		
+	</div>
+
+	<!-- <p class="text-center">------------------------  <a href="viewmore.html" class="navbar-brand viewmore">VIEW MORE</a>----------------------<p> -->
+	<hr class="w-100 divider">
+		<!-- contact -->
+	
+		<!-- our service -->
+		<div class="content">
+		<div class="container py-4">
+			<div class="row">
+				<div class="col-md-4 col-sm-12 px-5">
+					<h4>ORDER TO</h4>
+					<div class="row">
+						<div class="col-md-2">
+							<span class="fa-stack fa-2x form1">
+								<i class="fas fa-mobile-alt form1"></i>
+							</span>
+						</div>
+						<div class="col-md-10">
+							<p class="text-light">Mobile<br>
+							09458034466</p>
+						</div>
+						<div class="col-md-2">
+							<span class="fa-stack fa-2x">
+								<i class="far fa-envelope form1"></i>
+							</span>
+						</div>
+						<div class="col-md-10">
+							<p class="text-light ">Email<br>
+							brilliantrestaurant@gmail.com</p>
+						</div>
+						
+					</div>
+					
+
+				</div>
+				
+				<div class="col-md-4 col-sm-12 px-5">
+					<h4>QUICK LINK</h4>
+					<a class="btn btn-outline-light p-1" href="appetizer.html" role="button">Appetizer ></a>
+					<a class="btn btn-outline-light p-1" href="drink.html" role="button">Drink ></a>
+					<a class="btn btn-outline-light p-1" href="dessert.html" role="button">Dessert ></a>
+					<a class="btn btn-outline-light p-1" href="rice.html" role="button">Rice ></a>
+					<a class="btn btn-outline-light p-1" href="cuisine.html" role="button">Cuisine ></a>
+					<a class="btn btn-outline-light p-1" href="wine.html" role="button">Beer & Wine ></a>
+				</div>
+				<div class="col-md-4 col-sm-12 px-5">
+
+					<!-- div class="row"> -->
+						<!-- 
+						<div class="col-md-8  text-center text-muted">
+						
+							<div class="row"> -->
+								<h4>FOLLOW- US</h4>
+								<!-- <div class="col-md-4 col-sm-12"> -->
+									<a href="https://www.facebook.com/" title="facebook"><i class="fab fa-facebook text-light fa-2x social p-2"></i></a>
+
+								<!-- </div>
+								<div class="col-md-4 col-sm-12 "> -->
+									<a href="https://www.messenger.com/" title="messager"><i class="fab fa-facebook-messenger text-light fa-2x social p-2"></i>
+									</a>
+								<!-- </div>
+								<div class="col-md-4 col-sm-12 "> -->
+									<a href="https://www.instagram.com/" title="instagram">	<i class="fab fa-instagram-square text-light fa-2x social p-2"></i></a>
+
+								<!-- </div>
+								
+								
+							</div> -->
+
+					<!-- 	</div>
+
+					</div> -->
+
+
+
+				</div>
+
+			</div>
+
+		</div>
+	</div>
+
+
+		<!-- footer -->
+	 
+
+		<footer class="footer py-1">
+			<div class="container text-light text-center text-dark text-monospace">
+				<p class="footertext m-0">Copyright &copy; All Right Result | Powered By Web-Design-2020 </p>
+				
+			</div>
+
+			
+		</footer>
+
+
+
+
+
+
+<!-- CheckOut Modal -->
+<div class="modal fade" id="checkModal">
+	<div class="modal-dialog modal-dialog-scrollable modal-lg">
+		<div class="modal-content">
+			<div class="modal-header">
+				<h3>Menu Check Out</h3>
+				<button class="close" data-dismiss="modal">
+					<span>&times;</span>
+				</button>
+			</div>
+
+			<div class="modal-body">
+				<div class="container">
+					<div class="table-responsive">
+						<table class="table">
+							<thead>
+								<tr>
+									<th>No.</th>
+									<th>Menu Name:</th>
+									<th>Menu Price:</th>
+									<th>Qty</th>
+									<th>Sub Total</th>
+								</tr>
+							</thead>
+
+							<tbody id="tbody">
+
+
+							</tbody>
+
+							<!-- <tfoot>
+								<tr>
+									<th>No.</th>
+									<th>Menu Name:</th>
+									<th>Menu Price:</th>
+									<th>Qty</th>
+									<th>Sub Total</th>
+								</tr>
+							</tfoot> -->
+						</table>
+					</div>
+
+				</div>
+			</div>
+
+			<div class="modal-footer">
+				<button id="order" class="btn btn-outline-secondary">Order Now</button>
+			</div>
+
+
+		</div>
+	</div>
+
+</div>
+
+
+
+		<script type="text/javascript" src="bootstrap/js/jquery.min.js"></script>
+		<script type="text/javascript" src="bootstrap/js/bootstrap.bundle.min.js"></script>
+		<!-- aos -->
+
+
+
+		<script type="text/javascript">
+
+			$(document).ready(function()
+			{
+				
+				getData()
+				function getData()
+				{
+					var menuString = localStorage.getItem("rt_shop");
+					console.log(menuString);
+
+
+					if (menuString) {
+						var menuArray = JSON.parse(menuString);
+						var html = '';
+						var no=1;
+						var total=0;
+
+
+						$.each(menuArray,function(i,v)
+						{
+							var name = v.name;
+							var price = v.price;
+							var qty = v.qty;
+
+
+							html +=`
+							<tr>
+							<td>${no++}</td>
+							<td>${name}</td>
+							<td>${price}</td>
+							<td><button class="min" data-item_i="${i}">-<button> ${qty} <button class="max" data-item_i="${i}">+</button></td>
+							<td>${price*qty}</td>
+							</tr>`
+
+
+							total += price * qty;
+						})
+
+						html += `
+						<tr>
+						<td colspan="4">Total</td>
+						<td>${total}</td>
+						</tr>
+						`	
+
+						$("#tbody").html(html);	
+
+					}
+
+					else
+					{
+						html = '';
+						$("#tbody").html(html);
+					}
+					count();
+				}
+
+
+				$("#tbody").on('click', '.max' , function()
+				{
+					var item_i = $(this).data('item_i');
+					var menuString = localStorage.getItem("rt_shop");
+					if(menuString)
+					{
+						var menuArray = JSON.parse(menuString);
+						$.each(menuArray,function(i,v)
+						{
+							if(item_i == i)
+							{
+								v.qty++;
+							}
+
+							var menuData = JSON.stringify(menuArray);
+							localStorage.setItem("rt_shop",menuData);
+							getData();
+						})
+					}
+				})
+
+
+				$("#tbody").on('click', '.min' , function()
+				{
+					var item_i = $(this).data('item_i');
+					var menuString = localStorage.getItem("rt_shop");
+					if(menuString)
+					{
+						var menuArray = JSON.parse(menuString);
+						$.each(menuArray, function(i,v)
+						{
+							if(item_i == i)
+							{
+								v.qty--;
+								if(v.qty == 0)
+								{
+									menuArray.splice(item_i,1);
+								}
+							}
+
+							var menuData = JSON.stringify(menuArray);
+							localStorage.setItem("rt_shop",menuData);
+							getData();
+
+						})
+					}
+				})
+
+
+
+				$("#order").click(function()
+				{
+					var ans = confirm("Are you sure order");
+					if(ans)
+					{	
+						var conAns = confirm("Thank You, Can take Order Menu Items between 30minutes");
+						if(conAns)
+						{
+							localStorage.clear();
+							getData();
+						}
+						
+					}
+				})
+
+
+			})
+
+		</script>
+		
+		<script >
+
+			var prescroll= window.pageYOffset;
+			window.onscroll = function() {
+
+				var currentScroll = window.pageYOffset;
+				if (prescroll>currentScroll) {
+					document.getElementById("scroll").style.top = "0";
+				} else {
+					document.getElementById("scroll").style.top = "-100px";
+				}
+				prescroll= currentScroll;
+
+			}
+		</script>
+
+		
+
+	</body>
+	</html>

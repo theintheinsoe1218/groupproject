@@ -1,0 +1,423 @@
+/*nav.menu{
+	background-color: #821a1a;
+
+}*/
+
+
+.bd{
+	/*background-color: #efe4f2;*/
+	 margin: 0; 
+     padding: 0; 
+	background-color: white;
+}
+
+
+li.hov:hover {
+	color: #ecb731;
+	border: 2px solid #ecb630;
+}
+
+
+/*hr*/
+
+
+
+ hr.item-divider{
+ 	/*max-width: 13.25rem;
+
+ 	border-width: 0.1rem;
+ 	border-color: #924ba6;*/
+
+
+ 	width: 10em;
+	border-width: 0.1em;
+	color: #b7985b;
+	border-style: dotted;
+ }
+
+/*jumbon*/
+
+
+.jum
+{
+	background-image: url("images/Drink/mainDrink.jpg");
+    background-size: cover;
+    /*animation: zoominoutsinglefeatured 10s infinite ;*/
+}
+
+
+
+/*.jum background-image{
+	image
+}*/
+
+.jumApp
+{
+	background-image: url("images/appetizers/ma.jpeg");
+    background-size: cover;
+	/*animation: zoominoutfeatured 10s infinite ;*/
+}
+
+.jumCu
+{
+	background-image: url("images/cusine/mainCusin.jpg");
+    background-size: cover;
+    /*animation: zoominoutfeatured 10s infinite ;*/
+}
+
+.jumDes
+{
+	background-image: url("images/Dessert/mainDes.webp");
+    background-size: cover;
+    /*animation: zoominoutfeatured 10s infinite ;*/
+}
+
+.jumRice
+{
+	background-image: url("images/Rice/4.jpeg");
+    background-size: cover;
+   /*animation: zoominoutsinglefeatured 10s infinite ;*/
+}
+
+
+.jumWine
+{
+	background-image: url("images/Wine/mainBeer.jpg");
+    background-size: cover;
+  /* animation: zoominoutsinglefeatured 10s infinite ;*/
+}
+
+/*Slider*/
+
+.slider 
+{
+	width: 50%;
+	margin: 100px auto;
+	/*background-color: #b7985b;*/
+}
+
+
+
+.slick-slide 
+{
+	margin: 0px 20px;
+}
+
+
+.slick-prev:before,
+.slick-next:before 
+{
+	color: #b7985b;
+}
+
+
+.slick-slide 
+{
+	transition: all ease-in-out .3s;
+	opacity: .2;
+}
+
+.slick-active 
+{
+	opacity: 1;
+}
+
+.imgslick{
+	width: 100px;
+	height: 100px;
+	border-radius: 25px;
+}
+
+ .img
+{
+	width: 300px;
+	height: 180px;
+
+	/*max-width: 100%;
+	max-height: 100%;
+	display: block;*/
+}
+
+img.showPic
+{
+
+	width: 300px;
+	height: 180px;
+}
+
+/*Title*/
+
+.title{
+	color: #693f06;
+	font-family: 'Dancing Script', cursive;
+	text-align: center;
+	text-shadow: 2px 2px 4px #f0debb;           
+	text-transform: capitalize;
+}
+
+.card-title{
+	/*color: #fab507;*/
+	color: #693f06;
+	font-family: 'Dancing Script', cursive;
+	font-size: 1.4em;
+}
+
+
+.modal-body{
+	background-color: #f5f1e1;
+}
+
+.modal-header
+{
+	background-color: #f5f1e1;
+}
+
+.modal-footer
+{
+	background-color: #f5f1e1;
+}
+
+
+.table
+{
+	background-color: #f5f1e1;
+}
+
+/*Card Anination*/
+.card {
+  /*position: relative;*/
+  background-color: #FFFFFF;
+  /*height: 370px;
+  width: 240px;*/
+  /*margin: 10px;*/
+  overflow: hidden;
+  box-shadow: 0px 10px 10px 0px rgba(0,0,0,0.5);
+  border-radius: 15px;
+  border-color: black;
+  transform: 0.5s ease;
+  cursor: pointer;
+}
+
+
+.card-img:hover .img{
+	opacity: 0.5;
+
+}
+
+
+/*.card:hover{
+	transform: scale(1.12);
+	box-shadow: 2px 2px 10px rgba(0,0,0,6);
+	
+	background-color: #f7e7c9;
+	
+}
+*/
+
+@keyframes zoominoutsinglefeatured {
+    0% {
+        transform: scale(.85,.85);
+        /*transform: scale(1,1);*/
+    }
+    50% {
+        transform: scale(1,1);
+       /* transform: scale(1.2,1.2);*/
+    }
+    100% {
+        transform: scale(.85,.85);
+       /* transform: scale(1,1);*/
+    }
+}
+
+
+@keyframes zoominoutsinglefeatured1 {
+    0% {
+        transform: scale(.85,.85);
+        transform: scale(1,1);
+    }
+    50% {
+        transform: scale(1,1);
+        transform: scale(1.2,1.2);
+    }
+    100% {
+        transform: scale(8.5,8.5);
+        transform: scale(1,1);
+    }
+}
+
+.container img {
+    animation: zoominoutsinglefeatured 10s infinite ;
+}
+
+
+
+
+
+
+
+
+
+
+
+/*nava*/
+.menu{
+	position: absolute;
+	background-color: #b7985b;
+	position: fixed;
+	top: 0px;
+	z-index: 1;
+	
+	height: 70px;
+	transition: top 2s;
+	border-radius: 3px;
+}
+
+
+.colo a:hover{
+	color: black;
+
+}
+
+
+}
+#navbackgound{
+	background-color: black;
+}
+
+.font
+{
+	/*font-family: 'Bungee Outline', cursive;*/
+	font-family: 'Dancing Script', cursive;
+	font-weight: bold;
+	font-style: italic;
+	font-size: 2em;
+	color:  black;
+}
+
+
+
+.font{
+	
+	padding: 0px;
+	margin: 0px;
+	display: block;
+	animation: shake 4s;
+
+}
+
+.fnav{
+
+	font-family: 'Dancing Script', cursive;
+	font-weight: bold;
+	font-style: italic;
+	font-size: 1.7em;
+	color:  black;
+	padding: 0px;
+	margin: 0px;
+	display: block;
+	animation: shake 4s;
+
+}
+
+/*.ttt:hover
+{
+	color: back;
+}
+*/
+
+.colo a{
+ color: white;
+ font-family: 'Emilys Candy', cursive;
+/*font-family: 'Poiret One', cursive;*/
+ font-size: 1.3em;
+ font-style: italic;
+}
+
+
+#scroll{
+	position: fixed;
+	width: 100%;
+	transition: top 1.5s;
+}
+
+
+@keyframes shake {
+  10% { transform: translate(100px, -500px) rotate(5deg); }
+ 
+ 
+  20% { transform: translate(-3px, 30px) rotate(-20deg); }
+  30% { transform: translate(-53px, 5px) rotate(20deg); }
+  40% { transform: translate(1px, -11px) rotate(-30deg); }
+  50% { transform: translate(-3px, 5px) rotate(5deg); }
+  60% { transform: translate(-13px, 10px) rotate(-10deg); }
+   70% { transform: translate(-3px, 5px) rotate(5deg); }
+ /* 20% { transform: translate(-3px, 5px) rotate(5deg); }*/
+  80% { transform: translate(-11px, -5px) rotate(-10deg); }
+  90% { transform: translate(-3px, 5px) rotate(5deg); }
+  100% { transform: translate(1px, -1px) rotate(-5deg); }
+}
+
+
+
+
+
+/*content*/
+.content{
+	background-color: #4a4a47;
+}
+.delivery{
+	color: white;
+
+}
+
+h4{
+	color: #b7985b;
+	font-family: 'Crimson Text', serif;
+}
+
+.social:hover{
+color: #b7985b;
+}
+
+
+
+
+/*footer*/
+/*footer*/
+.footer{
+	background-color: #b7985b;
+	height: 35px;
+
+}
+
+.footertext{
+	color: white;
+	font-size: 1.1em;
+}
+
+
+
+.divider{
+	
+	border-width: 0.3rem;
+	border-color: #b7985b;
+}
+
+.delivery{
+	font-size: 20px;
+	line-height: 33px;
+}
+
+
+span .form1{
+	color: #b7985b;
+}
+
+
+
+
+
+
+
+
+
